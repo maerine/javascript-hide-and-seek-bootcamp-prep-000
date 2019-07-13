@@ -23,7 +23,13 @@ function increaseRankBy(n) {
 function deepestChild() {
   const grand = document.querySelector('div#grand-node');
   let current = grand;
-  let next = 
+  let next = current.children;
   
-  
+  while(current) {
+    if (current.children === undefined) {
+      return current;
+    } else {
+      current = next;
+    }
+  }
 }
