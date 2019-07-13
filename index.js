@@ -29,7 +29,7 @@ function deepestChild() {
       return current;
     } else {
       current = next;
-      next = current.children;
+      next = current.children[0];
     }
   }
 }
