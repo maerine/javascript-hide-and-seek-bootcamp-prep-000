@@ -25,7 +25,7 @@ function deepestChild() {
   let current = grand;
   let next = current.children;
   
-  while(current || current === 0) {
+  while(current) {
     if (current.children === undefined) {
       return current;
     } else {
